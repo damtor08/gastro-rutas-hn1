@@ -1,0 +1,235 @@
+:root {
+    --verde-principal: #1F5C4D;
+    --verde-secundario: #3E8E7E;
+    --dorado: #C9A24D;
+    --cafe-oscuro: #6B4E2E;
+    --crema: #F4F1EC;
+    --blanco: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--crema);
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--verde-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.brand {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--dorado);
+}
+
+.country {
+    font-size: 0.9em;
+    color: var(--verde-secundario);
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background-color: var(--dorado);
+    transition: width 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    margin-top: 90px;
+    height: 90vh;
+    background: linear-gradient(rgba(31,92,77,.75), rgba(31,92,77,.75)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    color: var(--blanco);
+    text-align: center;
+    max-width: 700px;
+}
+
+.slogan {
+    color: var(--dorado);
+    font-style: italic;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 40px;
+}
+
+.alt {
+    background-color: var(--blanco);
+}
+
+.section h2 {
+    text-align: center;
+    color: var(--verde-principal);
+    margin-bottom: 40px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--blanco);
+    padding: 30px;
+    border-radius: 14px;
+    border-top: 6px solid var(--dorado);
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+/* PROPUESTA */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.box {
+    background: var(--blanco);
+    padding: 30px;
+    border-radius: 16px;
+    border-left: 6px solid var(--verde-secundario);
+}
+
+/* MODELO */
+.modelo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.modelo-card {
+    background: var(--blanco);
+    padding: 35px;
+    border-radius: 18px;
+    border-top: 6px solid var(--dorado);
+    box-shadow: 0 12px 28px rgba(0,0,0,.1);
+    transition: transform .3s;
+}
+
+.modelo-card:hover {
+    transform: translateY(-6px);
+}
+
+.precio {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--cafe-oscuro);
+}
+
+/* CONTACTO */
+.contact-form {
+    max-width: 520px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: var(--dorado);
+    color: var(--verde-principal);
+    font-weight: 600;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contact-mail {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+    text-align: center;
+    padding: 25px;
+}
+
+/* BACK TO TOP */
+.back-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--dorado);
+    color: var(--verde-principal);
+    padding: 12px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
