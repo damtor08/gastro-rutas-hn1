@@ -2,140 +2,148 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>GastroRutas_HN | Turismo Gastronómico Sostenible</title>
+    <title>GastroRutas HN | Turismo Gastronómico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="header">
     <div class="logo">
-        <img src="img/logo.png" alt="GastroRutas_HN">
-        <div class="logo-text">
-            <span class="brand">GastroRutas</span>
-            <span class="country">HN</span>
-        </div>
+        <img src="Logo_sf.png" alt="GastroRutas HN">
     </div>
-
-    <nav>
-        <ul class="menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#design">Design Thinking</a></li>
-            <li><a href="#valor">Propuesta de Valor</a></li>
-            <li><a href="#modelo">Sostenibilidad</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+    <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#experiencias">Experiencias</a>
+        <a href="#funciona">Cómo funciona</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#contacto">Contacto</a>
     </nav>
 </header>
 
+<!-- HERO -->
 <section id="inicio" class="hero">
-    <div class="hero-content">
-        <h1>Descubre Honduras desde su sabor</h1>
-        <p>Turismo gastronómico que conecta al viajero con el productor rural</p>
-        <span class="slogan">“Honduras tiene el sabor, nosotros ponemos la ruta”</span>
+    <h1>Turismo gastronómico auténtico en Honduras</h1>
+    <p>Conectamos viajeros con experiencias culinarias locales, rurales y sostenibles.</p>
+    <div class="hero-buttons">
+        <a href="#experiencias" class="btn">Explorar experiencias</a>
+        <a href="#reservas" class="btn outline">Consultar precios</a>
     </div>
 </section>
 
-<section id="design" class="section">
-    <h2>Design Thinking</h2>
+<!-- PROPUESTA DE VALOR -->
+<section class="section">
+    <div class="features">
+        <div class="feature">🌱 Experiencias locales auténticas</div>
+        <div class="feature">🍽️ Gastronomía tradicional hondureña</div>
+        <div class="feature">🤝 Apoyo a productores locales</div>
+    </div>
+</section>
+
+<!-- EXPERIENCIAS -->
+<section id="experiencias" class="section alt">
+    <h2>Experiencias Gastronómicas</h2>
 
     <div class="cards">
         <div class="card">
-            <h3>Empatizar</h3>
-            <p>Productores rurales invisibles digitalmente y turistas que buscan experiencias auténticas.</p>
+            <h3>Ruta del Café</h3>
+            <p>Visita fincas cafetaleras, catas guiadas y proceso artesanal.</p>
+            <p class="precio">Desde L 850 por persona</p>
+            <a href="#reservas" class="btn">Consultar</a>
         </div>
 
         <div class="card">
-            <h3>Definir</h3>
-            <p>Desconexión entre el turista consciente y el productor sin acceso a tecnología.</p>
+            <h3>Ruta del Cacao</h3>
+            <p>Del grano al chocolate con productores locales.</p>
+            <p class="precio">Desde L 950 por persona</p>
+            <a href="#reservas" class="btn">Consultar</a>
         </div>
 
         <div class="card">
-            <h3>Idear</h3>
-            <p>Plataforma con rutas, marketplace y experiencias sensoriales.</p>
-        </div>
-
-        <div class="card">
-            <h3>Prototipar</h3>
-            <p>Web interactiva con geolocalización y comercio directo.</p>
-        </div>
-
-        <div class="card">
-            <h3>Evaluar</h3>
-            <p>Validación institucional, académica y alineada a los ODS.</p>
+            <h3>Cocina Tradicional</h3>
+            <p>Talleres culinarios con recetas ancestrales.</p>
+            <p class="precio">Desde L 700 por persona</p>
+            <a href="#reservas" class="btn">Consultar</a>
         </div>
     </div>
 </section>
 
-<section id="valor" class="section alt">
-    <h2>Propuesta de Valor</h2>
+<!-- CÓMO FUNCIONA -->
+<section id="funciona" class="section">
+    <h2>¿Cómo funciona?</h2>
 
-    <div class="grid">
-        <div class="box">
-            <h3>Turista</h3>
-            <ul>
-                <li>Inmersión en el origen</li>
-                <li>Consumo responsable</li>
-                <li>Conexión humana</li>
-                <li>Experiencias memorables</li>
-            </ul>
-        </div>
-
-        <div class="box">
-            <h3>Productor Rural</h3>
-            <ul>
-                <li>Visibilidad digital</li>
-                <li>Ingresos directos</li>
-                <li>Empoderamiento</li>
-                <li>Inclusión tecnológica</li>
-            </ul>
-        </div>
+    <div class="steps">
+        <div class="step">1️⃣ Explora las experiencias</div>
+        <div class="step">2️⃣ Envía tu solicitud</div>
+        <div class="step">3️⃣ Coordinamos contigo</div>
+        <div class="step">4️⃣ Vive la experiencia</div>
     </div>
 </section>
 
-<section id="modelo" class="section">
-    <h2>Modelo de Sostenibilidad</h2>
+<!-- RESERVAS -->
+<section id="reservas" class="section alt">
+    <h2>Reservaciones y Consultas</h2>
 
-    <div class="modelo-cards">
-        <div class="modelo-card">
-            <h3>Suscripción Premium</h3>
-            <p class="precio">L 199.00 / mes</p>
-            <p>
-                Visibilidad prioritaria para productores, restaurantes
-                y emprendimientos gastronómicos.
-            </p>
-        </div>
+    <form 
+        action="https://formspree.io/f/mwvnkeja" 
+        method="POST" 
+        class="form">
 
-        <div class="modelo-card">
-            <h3>Comisión Marketplace</h3>
-            <p class="precio">6% – 8%</p>
-            <p>
-                Comisión por cada venta de productos y experiencias
-                realizadas dentro de la plataforma.
-            </p>
-        </div>
-    </div>
-</section>
+        <input 
+            type="text" 
+            name="nombre" 
+            placeholder="Nombre completo" 
+            required>
 
-<section id="contacto" class="section alt">
-    <h2>Contáctanos</h2>
+        <input 
+            type="email" 
+            name="email" 
+            placeholder="Correo electrónico" 
+            required>
 
-    <form action="https://formspree.io/f/mwvnkeja" method="POST" class="contact-form">
-        <input type="text" name="nombre" placeholder="Nombre completo" required>
-        <input type="email" name="email" placeholder="Correo electrónico" required>
-        <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
-        <button type="submit">Enviar mensaje</button>
+        <select name="experiencia" required>
+            <option value="">Selecciona una experiencia</option>
+            <option>Ruta del Café</option>
+            <option>Ruta del Cacao</option>
+            <option>Cocina Tradicional</option>
+        </select>
+
+        <input 
+            type="date" 
+            name="fecha">
+
+        <textarea 
+            name="mensaje" 
+            placeholder="Cantidad de personas o consulta adicional"></textarea>
+
+        <!-- Opcional pero MUY recomendado -->
+        <input 
+            type="hidden" 
+            name="_subject" 
+            value="Nueva solicitud – GastroRutas HN">
+
+        <button type="submit">Solicitar información</button>
     </form>
-
-    <p class="contact-mail">📧 gastrorutashn@gmail.com</p>
 </section>
 
-<footer>
-    <p>© 2026 GastroRutas_HN | Turismo Gastronómico Sostenible</p>
-    <p>Equipo 5 · CEUTEC</p>
-</footer>
+<!-- SOSTENIBILIDAD -->
+<section class="section">
+    <h2>Sostenibilidad</h2>
 
-<a href="#inicio" class="back-top">↑</a>
+    <div class="cards">
+        <div class="card small">🌍 Turismo responsable</div>
+        <div class="card small">♻️ Economía local</div>
+        <div class="card small">🌱 Cuidado ambiental</div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<footer id="contacto" class="footer">
+    <p>📧 gastrorutas.hn@gmail.com</p>
+    <p>📍 Honduras</p>
+    <p>© 2026 GastroRutas HN</p>
+</footer>
 
 </body>
 </html>
