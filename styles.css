@@ -82,18 +82,23 @@ h2 {
 }
 
 /* FEATURES */
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
 .feature {
     background: var(--verde-claro);
     padding: 25px;
     border-radius: 20px;
     font-weight: 600;
+    text-decoration: none;
+    color: var(--verde);
+    transition: 0.3s;
+    display: inline-block;
 }
+
+.feature:hover {
+    background: var(--dorado);
+    color: var(--verde);
+    transform: translateY(-5px);
+}
+
 
 /* CARDS */
 .cards {
