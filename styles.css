@@ -323,3 +323,19 @@ section {
     }
 }
 
+/* SECCIÓN DESTACADA */
+.highlight-section {
+    background: linear-gradient(
+        rgba(255,255,255,0.92),
+        rgba(255,255,255,0.92)
+    ),
+    url('https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Imagen específica */
+.experiencias-img {
+    background-image: url('https://images.unsplash.com/photo-1511690656952-34342bb7c2f2');
+}
+
