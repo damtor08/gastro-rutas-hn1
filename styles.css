@@ -239,4 +239,87 @@ section {
     height: 100px;   /* altura reducida */
     border: 0;
 }
+/* SECCIÓN BASE */
+.split-section {
+    padding: 120px 60px;
+    background: var(--blanco);
+}
+
+.alt-section {
+    background: #f8f8f8;
+}
+
+.split-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.split-text {
+    flex: 1;
+}
+
+.split-text h2 {
+    font-size: 2.2rem;
+    margin: 15px 0 25px 0;
+    color: var(--verde);
+    font-weight: 600;
+}
+
+.split-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: var(--gris);
+    font-size: 1.05rem;
+}
+
+/* Etiqueta pequeña arriba */
+.tag {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--dorado);
+    font-weight: bold;
+}
+
+/* IMÁGENES */
+.split-image {
+    flex: 1;
+    min-height: 420px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.gastro-img {
+    background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c');
+}
+
+.productores-img {
+    background-image: url('https://images.unsplash.com/photo-1506806732259-39c2d0268443');
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .split-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .split-image {
+        width: 100%;
+    }
+}
 
